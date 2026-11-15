@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-primary: #2457C5;
+    --color-primary-hover: #1B439C;
+    --color-deep-ink: #14284B;
+    --color-bg: #FFF8E9;
+    --color-surface: #FFFDF7;
+    --color-surface-muted: #F5EEDF;
+    --color-border: #E7DFC9;
+    --color-border-dark: #D4C9AF;
+    --color-muted-text: #625F58;
+    --color-accent: #D9A441;
+    --color-positive: #1E7B54;
+    --color-danger: #BA2D32;
+  }
+
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-deep-ink);
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, .font-serif-heading {
+    font-family: 'Newsreader', Georgia, serif;
+    letter-spacing: -0.02em;
+  }
+
+  .font-mono-data {
+    font-family: 'JetBrains Mono', monospace;
+    font-feature-settings: 'tnum' on, 'zero' on;
+  }
+}
+
+/* Custom Scrollbar for Financial Ledgers and Feeds */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FFF8E9;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4C9AF;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B8AA8C;
+}
